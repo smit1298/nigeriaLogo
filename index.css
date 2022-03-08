@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.img-container {
+  width: 76vw;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.card-box {
+  width: 22%;
+  height: 200px;
+  margin: 15px 0px 100px 0px;
+}
+.card {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image {
+  width: 168px;
+  background-repeat: 4px;
+}
+
+#alphabets > p {
+  display: inline;
+  letter-spacing: 30px;
+}

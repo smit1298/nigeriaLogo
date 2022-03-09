@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+#categories{
+  width: 150px;
+  height: 30px;
+}
 .card-image {
   width: 168px;
   background-repeat: 4px;
@@ -42,4 +46,5 @@
 #alphabets > p {
   display: inline;
   letter-spacing: 30px;
+  cursor: pointer;
 }

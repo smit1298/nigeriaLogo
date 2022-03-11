@@ -27,7 +27,6 @@ for (let i = 0; i < sortedCategories.length; i++) {
 
 const alphabet = "#abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 
-console.log(alphabet);
 
 
 for (let i = 0; i < alphabet.length; i++) {
@@ -37,7 +36,7 @@ for (let i = 0; i < alphabet.length; i++) {
 }
 
 
-function pickOutCompany(companyEntity) {
+function pickCompany(companyEntity) {
   const fileName = companyEntity.filename;
   const title = companyEntity.title;
   const category = companyEntity.category.filter((a) => a.length).join(" / ");
@@ -56,7 +55,7 @@ function pickOutCompany(companyEntity) {
 }
 
 for (let i = 0; i < nigeriaLogo.length; i++) {
-  pickOutCompany(nigeriaLogo[i]);
+  pickCompany(nigeriaLogo[i]);
 }
 
 
@@ -67,7 +66,7 @@ document.getElementById("categories").addEventListener("change", function(e){
 
   for (let i = 0; i < nigeriaLogo.length; i++){
     if (nigeriaLogo[i].category.includes(categoryValue)){
-      pickOutCompany(nigeriaLogo[i]);
+      pickCompany(nigeriaLogo[i]);
     }
   }
 })
@@ -83,11 +82,12 @@ for (let i = 0; i < anchor.length; i++) {
     for (let i = 0; i < nigeriaLogo.length; i++) 
     {
       if (nigeriaLogo[i].title.startsWith(presentLetter)) 
+  
       {
-        pickOutCompany(nigeriaLogo[i]);
+        pickCompany(nigeriaLogo[i]);
       }
     }
   }
   );
-}
 
+}
